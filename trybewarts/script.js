@@ -68,13 +68,13 @@ function mostrarDadosFormulario(event) {
 
   Object.entries(dados).forEach((entrie) => {
     const p = document.createElement('p');
-    p.append(document.createTextNode(`${entrie[0]}: ${entrie[1]}`));
+    p.innerHTML = `<span>${entrie[0]}:</span> ${entrie[1]}`;
     form.appendChild(p);
     form.appendChild(document.createElement('hr'));
   });
-  event.target.innerHTML = 'Voltar';
-  form.appendChild(event.target);
 
+  event.target.textContent = 'Voltar';
+  form.appendChild(event.target);
   event.preventDefault();
 }
 
