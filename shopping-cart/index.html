@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Document</title>
+  <title>Trybe Shopping</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="cart-animation.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
@@ -15,32 +16,40 @@
   <script src="./helpers/fetchProducts.js" defer></script>
   <script src="./helpers/saveCartItems.js" defer></script>
   <script src="./helpers/getSavedCartItems.js" defer></script>
+  <script src="cart.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 
 <body>
   <header class="header">
     <div class="container-title">
-      <a href="" class="title"><strong>trybe</strong>shopping</a>
+      <a href="" class="title"><strong>Trybe</strong>Shopping</a>
     </div>
     <label for="search_product" class="search_product_label">
       <input type="text" id="search_product" placeholder="Buscar">
-      <img src="./icon/search_black_24dp.svg" alt="Ícone de lupa" id="icon-search">
+      <i id="icon-search" class="material-icons">search</i>
     </label>
     <div class="container-cartTitle">
-      <i class="material-icons" style="font-size:45px;color:white">shopping_cart</i>
+      <i class="material-icons cart-icon">shopping_cart<i class="cart-icon-items-total"></i></i>
       <span class="cart__title">Meu carrinho</span>
     </div>
   </header>
   <section class="container">
-    <section class="items"></section>
     <section class="cart">
-      <ol class="cart__items"></ol>
-      <div class="items__price">
-        Total R$ <span class="total-price">0</span>
+      <div class="cart__items__container">
+        <ol class="cart__items"></ol>
+        <div class="items__price">
+          Total <span class="total-price__container"></span>
+        </div>
+        <button class="empty-cart">Esvaziar carrinho<i class="material-icons empty-icon">delete_forever</i></button>
       </div>
-      <button class="empty-cart">Esvaziar carrinho</button>
+      <div class="empty__cart__message__container">
+        Seu carrinho está vazio
+        <i class="material-icons md-48">sentiment_dissatisfied</i>
+        <i class="material-icons md-48">remove_shopping_cart</i>
+      </div>
     </section>
+    <section class="items"></section>
   </section>
 </body>
 
