@@ -1,0 +1,34 @@
+.Header {
+  display: flex;
+}
+
+.Header-btnPlay, .Header-btnEditCards {
+  border: none;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  flex-basis: 50%;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.Header-btnPlay {
+  background-color: green;
+}
+
+.Header-btnEditCards {
+  background-color: blue;
+}
+
+.Header-btnPlay:active {
+  background-color: darkgreen;
+}
+
+.Header-btnEditCards:active {
+  background-color: darkblue;
+}
+
+.Header-btnPlay:hover, .Header-btnEditCards:hover {
+  box-shadow: inset 0 0 20px black;
+}
