@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/trybe-projetos/tryunfo/static/css/main.8fd8e9d3.css",
+    "main.js": "/trybe-projetos/tryunfo/static/js/main.fe8a7206.js",
+    "static/media/crown-solid.svg": "/trybe-projetos/tryunfo/static/media/crown-solid.de2f81188648a812488a.svg",
+    "index.html": "/trybe-projetos/tryunfo/index.html",
+    "main.8fd8e9d3.css.map": "/trybe-projetos/tryunfo/static/css/main.8fd8e9d3.css.map",
+    "main.fe8a7206.js.map": "/trybe-projetos/tryunfo/static/js/main.fe8a7206.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8fd8e9d3.css",
+    "static/js/main.fe8a7206.js"
+  ]
+}
